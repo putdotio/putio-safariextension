@@ -30,7 +30,7 @@
 			</dict>
 		</array>
 		<key>Database Quota</key>
-		<integer>1048576</integer>
+		<integer>0</integer>
 		<key>Global Page</key>
 		<string>global.html</string>
 		<key>Toolbar Items</key>
@@ -41,7 +41,7 @@
 				<key>Identifier</key>
 				<string>putio-click</string>
 				<key>Image</key>
-				<string>icon.png</string>
+				<string>Icon-toolbar.png</string>
 				<key>Include By Default</key>
 				<true/>
 				<key>Label</key>
