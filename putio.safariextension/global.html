@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  const APP_URL = 'https://app.put.io'
+
+  function openTab(url, activate) {
+    return safari.application.activeBrowserWindow.openTab(activate ? 'foreground' : 'background').url = url
+  }
+
+  function performCommand(event) {
+    if (event.command === 'putio-download') {
+      return openTab(APP_URL + '/magnet?url=' + encodeURIComponent(event.userInfo), false)
+    }
+
+    if (event.command === 'putio-click') {
+      return openTab(APP_URL, true)
+    }
+  }
+
+  safari.application.addEventListener("command", performCommand, false);
+</script>
+
