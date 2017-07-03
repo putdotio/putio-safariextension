@@ -1,13 +1,19 @@
 <script type="text/javascript">
   const APP_URL = 'https://app.put.io'
 
+  function handleContextMenu(event) {
+    if (event.userInfo && event.userInfo.nodeName === 'A') {
+      event.contextMenu.appendContextMenuItem('putio-download', 'Download with Put.io')
+    }
+  }
+
   function openTab(url, activate) {
-    return safari.application.activeBrowserWindow.openTab(activate ? 'foreground' : 'background').url = url
+    safari.application.activeBrowserWindow.openTab(activate ? 'foreground' : 'background').url = url
   }
 
   function performCommand(event) {
     if (event.command === 'putio-download') {
-      return openTab(APP_URL + '/magnet?url=' + encodeURIComponent(event.userInfo), false)
+      return openTab(APP_URL + '/magnet?url=' + encodeURIComponent(event.userInfo.href), false)
     }
 
     if (event.command === 'putio-click') {
@@ -15,6 +21,7 @@
     }
   }
 
-  safari.application.addEventListener("command", performCommand, false);
+  safari.application.addEventListener("command", performCommand, false)
+  safari.application.addEventListener('contextmenu', handleContextMenu, false)
 </script>
 

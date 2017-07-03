@@ -18,17 +18,6 @@
 	<string>1</string>
 	<key>Chrome</key>
 	<dict>
-		<key>Context Menu Items</key>
-		<array>
-			<dict>
-				<key>Command</key>
-				<string>putio-download</string>
-				<key>Identifier</key>
-				<string>putio-download</string>
-				<key>Title</key>
-				<string>Download with Put.io</string>
-			</dict>
-		</array>
 		<key>Database Quota</key>
 		<integer>0</integer>
 		<key>Global Page</key>
