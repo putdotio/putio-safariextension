@@ -43,7 +43,9 @@
 		</array>
 	</dict>
 	<key>Companion Bundle Identifier</key>
-	<array/>
+	<array>
+		<string>com.putio.safariextension</string>
+	</array>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
@@ -70,6 +72,8 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://github.com/putdotio/putio-safariextension/raw/master/putio.safariextension/update.plist</string>
 	<key>Website</key>
 	<string>https://put.io</string>
 </dict>
