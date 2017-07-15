@@ -9,7 +9,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>putio</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.putio</string>
+	<string>com.putio.safariextension</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -42,6 +42,8 @@
 			</dict>
 		</array>
 	</dict>
+	<key>Companion Bundle Identifier</key>
+	<array/>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
@@ -55,7 +57,7 @@
 	<key>Description</key>
 	<string>Put.io extension for Safari</string>
 	<key>DeveloperIdentifier</key>
-	<string>0000000000</string>
+	<string>STJ42L5PJH</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+     <key>Extension Updates</key>
+     <array>
+      <dict>
+        <key>CFBundleIdentifier</key>
+        <string>com.putio.safariextension</string>
+        <key>Developer Identifier</key>
+        <string>STJ42L5PJH</string>
+        <key>CFBundleVersion</key>
+        <string>1.0</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1</string>
+        <key>URL</key>
+        <string>https://github.com/putdotio/putio-safariextension/raw/master/putio.safariextz</string>
+      </dict>
+    </array>
+    <key>Update From Gallery</key>
+    <true/>
+  </dict>
+</plist>
+
