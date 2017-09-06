@@ -2,7 +2,7 @@
   const APP_URL = 'https://app.put.io'
 
   function handleContextMenu(event) {
-    if (event.userInfo && event.userInfo.nodeName === 'A') {
+    if (event.userInfo && (event.userInfo.nodeName === 'A' || event.userInfo.nodeName === 'IMG')) {
       event.contextMenu.appendContextMenuItem('putio-download', 'Download with Put.io')
     }
   }
@@ -21,7 +21,7 @@
     }
   }
 
-  safari.application.addEventListener("command", performCommand, false)
+  safari.application.addEventListener('command', performCommand, false)
   safari.application.addEventListener('contextmenu', handleContextMenu, false)
 </script>
 
